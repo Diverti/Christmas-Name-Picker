@@ -47,7 +47,6 @@ $names = file("names.txt", FILE_IGNORE_NEW_LINES);
             }
         };
         let nums = document.querySelectorAll('.paper').length;
-        alert(nums);
         xmlhttp.open("GET", "pick.php?q=" + index + "&num="+nums, true);
         xmlhttp.send();
     }
